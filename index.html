@@ -269,7 +269,7 @@
 
                 // 遍历解析后的歌词行数组
                 parsedLines.forEach(line => {
-                    // 检查自身是否是当前时间戳的唯一行，并检查上一轮的时间戳是否已经合并结束
+                    // 检查是否为第一轮循环，并检查上一轮循环的时间戳是否已经合并结束
                     if (!tempCurrentGroup || tempCurrentGroup.timestamp !== line.timestamp) {
                         // 如果临时分组存在，说明上一个分组已经处理完，且时间戳已错开，将临时结果push到结果数组中
                         if (tempCurrentGroup) {
