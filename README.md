@@ -1,2 +1,2 @@
-# NoCRLF
-Stop Git replacing LF with CRLF when files are upload
+# .lrc歌词文件转.srt字幕
+.lrc歌词文件转.srt字幕
