@@ -179,6 +179,9 @@
                 // Filter用于过滤并移除lrc中的非歌词内容
                 lrcContent = cleanLrcContent(lrcContent);
 
+                // 将清洁后的内容为IrcInput同步更新
+                lrcInput.value = lrcContent;
+
                 // Parse LRC content
                 const lines = lrcContent.split('\r\n');
                 // \[ 和 \]：分别匹配时间标签的左右方括号，由于方括号在正则里有特殊含义，所以需要用反斜杠转义
